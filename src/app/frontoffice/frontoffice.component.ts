@@ -1,13 +1,13 @@
-import {Component} from '@angular/core';
-import {RouterOutlet} from '@angular/router';
-import {NavbarComponent} from "./navbar/navbar.component";
-import {FooterComponent} from "./footer/footer.component";
-import {BannerComponent} from "./banner/banner.component";
+import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { FrontOfficeNavbarComponent } from "./layout/front-office-navbar/front-office-navbar.component";
+import { FrontOfficeFooterComponent } from "./layout/front-office-footer/front-office-footer.component";
+import { BannerComponent } from "./banner/banner.component";
 
 @Component({
   selector: 'app-frontoffice',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, FooterComponent,BannerComponent],
+  imports: [RouterModule, FrontOfficeNavbarComponent, FrontOfficeFooterComponent, BannerComponent],
   templateUrl: './frontoffice.component.html',
   styleUrl: './frontoffice.component.scss'
 })
